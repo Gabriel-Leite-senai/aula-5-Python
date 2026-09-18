@@ -32,6 +32,28 @@ def retangulo():
     area = base*altura
     print(f"a area do seu reângudo: {area}")
 
+def paralelograma():
+    base = num_input("insira a largura do paralelograma: ")
+    altura = num_input("insira a altura do paralelograma: ")
+    
+    area = base*altura
+    print(f"a area do seu paralelograma: {area}")
+
+def paralelograma():
+    base = num_input("insira a largura do losango: ")
+    altura = num_input("insira a altura do losango: ")
+    
+    area = base*altura
+    print(f"a area do seu loango: {area}")
+
+def trapesio():
+    altura = num_input("insira a altura do trapésio: ")
+    bmaior = num_input("insira a largura da base maior do trapésio: ")
+    bmenor = num_input("insira a largura da base menor do trapésio: ")
+
+    area = (bmaior+bmenor)*altura/2
+    print(f"a area do seu trapésio e: {area}")
+
 while True:
     print("1 - Circulo")
     print("2 - Triângulo")
@@ -53,11 +75,11 @@ while True:
     elif opcao == "4":
         retangulo()
     elif opcao == "5":
-        print("calculando")
+        paralelograma()
     elif opcao == "6":
-        print("calculando")
+        paralelograma()
     elif opcao == "7":
-        print("calculando")
+        trapesio()
     elif opcao == "0":
         break
     else:
